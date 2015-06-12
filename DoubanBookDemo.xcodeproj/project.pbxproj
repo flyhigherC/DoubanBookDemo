@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457928361B297851006CEF14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457928351B297851006CEF14 /* main.m */; };
+		457928391B297851006CEF14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457928381B297851006CEF14 /* AppDelegate.m */; };
+		4579283C1B297851006CEF14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579283B1B297851006CEF14 /* ViewController.m */; };
+		4579283F1B297851006CEF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4579283D1B297851006CEF14 /* Main.storyboard */; };
+		457928411B297852006CEF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457928401B297851006CEF14 /* Images.xcassets */; };
+		457928441B297852006CEF14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 457928421B297852006CEF14 /* LaunchScreen.xib */; };
+		457928501B297852006CEF14 /* DoubanBookDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579284F1B297852006CEF14 /* DoubanBookDemoTests.m */; };
+		4579285B1B2979C7006CEF14 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579285A1B2979C7006CEF14 /* Book.m */; };
+		E360CF163B6296EE9A6C03D4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 319692EFC92FDF80C033E9A7 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4579284A1B297852006CEF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 457928281B297851006CEF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4579282F1B297851006CEF14;
+			remoteInfo = DoubanBookDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		319692EFC92FDF80C033E9A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		457928301B297851006CEF14 /* DoubanBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubanBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		457928341B297851006CEF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457928351B297851006CEF14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		457928371B297851006CEF14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		457928381B297851006CEF14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4579283A1B297851006CEF14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4579283B1B297851006CEF14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4579283E1B297851006CEF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		457928401B297851006CEF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		457928431B297852006CEF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		457928491B297852006CEF14 /* DoubanBookDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubanBookDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4579284E1B297852006CEF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4579284F1B297852006CEF14 /* DoubanBookDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubanBookDemoTests.m; sourceTree = "<group>"; };
+		457928591B2979C7006CEF14 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		4579285A1B2979C7006CEF14 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		5600E0700B269DE518A3F2D9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F554F712D1F98DA8448B0032 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4579282D1B297851006CEF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E360CF163B6296EE9A6C03D4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457928461B297852006CEF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049B591AC5077F11F192E76C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				319692EFC92FDF80C033E9A7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BBC4D6AABE7FEDDE3DB40B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F554F712D1F98DA8448B0032 /* Pods.debug.xcconfig */,
+				5600E0700B269DE518A3F2D9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		457928271B297851006CEF14 = {
+			isa = PBXGroup;
+			children = (
+				457928321B297851006CEF14 /* DoubanBookDemo */,
+				4579284C1B297852006CEF14 /* DoubanBookDemoTests */,
+				457928311B297851006CEF14 /* Products */,
+				1BBC4D6AABE7FEDDE3DB40B2 /* Pods */,
+				049B591AC5077F11F192E76C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		457928311B297851006CEF14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				457928301B297851006CEF14 /* DoubanBookDemo.app */,
+				457928491B297852006CEF14 /* DoubanBookDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		457928321B297851006CEF14 /* DoubanBookDemo */ = {
+			isa = PBXGroup;
+			children = (
+				457928591B2979C7006CEF14 /* Book.h */,
+				4579285A1B2979C7006CEF14 /* Book.m */,
+				457928371B297851006CEF14 /* AppDelegate.h */,
+				457928381B297851006CEF14 /* AppDelegate.m */,
+				4579283A1B297851006CEF14 /* ViewController.h */,
+				4579283B1B297851006CEF14 /* ViewController.m */,
+				4579283D1B297851006CEF14 /* Main.storyboard */,
+				457928401B297851006CEF14 /* Images.xcassets */,
+				457928421B297852006CEF14 /* LaunchScreen.xib */,
+				457928331B297851006CEF14 /* Supporting Files */,
+			);
+			path = DoubanBookDemo;
+			sourceTree = "<group>";
+		};
+		457928331B297851006CEF14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457928341B297851006CEF14 /* Info.plist */,
+				457928351B297851006CEF14 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4579284C1B297852006CEF14 /* DoubanBookDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4579284F1B297852006CEF14 /* DoubanBookDemoTests.m */,
+				4579284D1B297852006CEF14 /* Supporting Files */,
+			);
+			path = DoubanBookDemoTests;
+			sourceTree = "<group>";
+		};
+		4579284D1B297852006CEF14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4579284E1B297852006CEF14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4579282F1B297851006CEF14 /* DoubanBookDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457928531B297852006CEF14 /* Build configuration list for PBXNativeTarget "DoubanBookDemo" */;
+			buildPhases = (
+				BD9E35CA2075166525491024 /* Check Pods Manifest.lock */,
+				4579282C1B297851006CEF14 /* Sources */,
+				4579282D1B297851006CEF14 /* Frameworks */,
+				4579282E1B297851006CEF14 /* Resources */,
+				B580902CB3B818B82BA01EEA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubanBookDemo;
+			productName = DoubanBookDemo;
+			productReference = 457928301B297851006CEF14 /* DoubanBookDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		457928481B297852006CEF14 /* DoubanBookDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457928561B297852006CEF14 /* Build configuration list for PBXNativeTarget "DoubanBookDemoTests" */;
+			buildPhases = (
+				457928451B297852006CEF14 /* Sources */,
+				457928461B297852006CEF14 /* Frameworks */,
+				457928471B297852006CEF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4579284B1B297852006CEF14 /* PBXTargetDependency */,
+			);
+			name = DoubanBookDemoTests;
+			productName = DoubanBookDemoTests;
+			productReference = 457928491B297852006CEF14 /* DoubanBookDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		457928281B297851006CEF14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = AIR;
+				TargetAttributes = {
+					4579282F1B297851006CEF14 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					457928481B297852006CEF14 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 4579282F1B297851006CEF14;
+					};
+				};
+			};
+			buildConfigurationList = 4579282B1B297851006CEF14 /* Build configuration list for PBXProject "DoubanBookDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 457928271B297851006CEF14;
+			productRefGroup = 457928311B297851006CEF14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4579282F1B297851006CEF14 /* DoubanBookDemo */,
+				457928481B297852006CEF14 /* DoubanBookDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4579282E1B297851006CEF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4579283F1B297851006CEF14 /* Main.storyboard in Resources */,
+				457928441B297852006CEF14 /* LaunchScreen.xib in Resources */,
+				457928411B297852006CEF14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457928471B297852006CEF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B580902CB3B818B82BA01EEA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9E35CA2075166525491024 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4579282C1B297851006CEF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4579285B1B2979C7006CEF14 /* Book.m in Sources */,
+				4579283C1B297851006CEF14 /* ViewController.m in Sources */,
+				457928391B297851006CEF14 /* AppDelegate.m in Sources */,
+				457928361B297851006CEF14 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457928451B297852006CEF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457928501B297852006CEF14 /* DoubanBookDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4579284B1B297852006CEF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4579282F1B297851006CEF14 /* DoubanBookDemo */;
+			targetProxy = 4579284A1B297852006CEF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4579283D1B297851006CEF14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4579283E1B297851006CEF14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		457928421B297852006CEF14 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457928431B297852006CEF14 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		457928511B297852006CEF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		457928521B297852006CEF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		457928541B297852006CEF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F554F712D1F98DA8448B0032 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoubanBookDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		457928551B297852006CEF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5600E0700B269DE518A3F2D9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoubanBookDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		457928571B297852006CEF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DoubanBookDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoubanBookDemo.app/DoubanBookDemo";
+			};
+			name = Debug;
+		};
+		457928581B297852006CEF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DoubanBookDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoubanBookDemo.app/DoubanBookDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4579282B1B297851006CEF14 /* Build configuration list for PBXProject "DoubanBookDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457928511B297852006CEF14 /* Debug */,
+				457928521B297852006CEF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		457928531B297852006CEF14 /* Build configuration list for PBXNativeTarget "DoubanBookDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457928541B297852006CEF14 /* Debug */,
+				457928551B297852006CEF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		457928561B297852006CEF14 /* Build configuration list for PBXNativeTarget "DoubanBookDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457928571B297852006CEF14 /* Debug */,
+				457928581B297852006CEF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 457928281B297851006CEF14 /* Project object */;
+}
