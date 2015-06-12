@@ -18,8 +18,21 @@
 
 @implementation ViewController
 
+- (instancetype) init
+{
+    self = [super initWithStyle: UITableViewStylePlain];
+    return self;
+}
+
++  (instancetype) initWithStyle:(UITableViewStyle) style
+{
+    return [self init];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"book"];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureRestKit];
     [self loadBookInformation];}
@@ -58,7 +71,7 @@
                                            parameters:queryParams
                                               success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                   _books = mappingResult.array;
-                                                 // [self.tableView reloadData];
+//                                                 [self.tableView reloadData];
                                                   NSLog(@"Get the book list!! %@", [[_books objectAtIndex:0] title]);
                                               }
                                               failure:^(RKObjectRequestOperation *operation, NSError *error) {
