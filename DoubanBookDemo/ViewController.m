@@ -22,12 +22,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureRestKit];
-    [self loadBookInformation];}
+    [self loadBookInformation];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
    
+}
+
+- (instancetype) init
+{
+    //self = [super initWithStyle:UITableViewStylePlain];
+    self = [super initWithStyle: UITableViewStylePlain];
+    return self;
+}
+
+- (instancetype) initWithStyle:(UITableViewStyle)style
+{
+    return [self init];
 }
 
 - (void) configureRestKit
@@ -58,7 +72,10 @@
                                            parameters:queryParams
                                               success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                   _books = mappingResult.array;
-                                                 // [self.tableView reloadData];
+//                                                  dispatch_sync(dispatch_get_main_queue(), ^{
+//                                                      [self.tableView reloadData];
+//                                                  });
+                                                  [self.tableView reloadData];
                                                   NSLog(@"Get the book list!! %@", [[_books objectAtIndex:0] title]);
                                               }
                                               failure:^(RKObjectRequestOperation *operation, NSError *error) {
@@ -67,15 +84,23 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    //cell ini
     Book *book = _books[indexPath.row];
     cell.textLabel.text = [book title];
+    cell.detailTextLabel.text = [book publisher];
+    //NSLog(@"%@",[book publisher]);
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _books.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //Here you must return the number of sectiosn you want
+    return 1;
 }
 
 @end

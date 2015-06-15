@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456E712E1B2E68CC002E3C07 /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 456E712D1B2E68CC002E3C07 /* BookStore.m */; };
 		457928361B297851006CEF14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457928351B297851006CEF14 /* main.m */; };
 		457928391B297851006CEF14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457928381B297851006CEF14 /* AppDelegate.m */; };
 		4579283C1B297851006CEF14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579283B1B297851006CEF14 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		319692EFC92FDF80C033E9A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		456E712C1B2E68CC002E3C07 /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
+		456E712D1B2E68CC002E3C07 /* BookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
 		457928301B297851006CEF14 /* DoubanBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubanBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457928341B297851006CEF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457928351B297851006CEF14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,15 +111,17 @@
 		457928321B297851006CEF14 /* DoubanBookDemo */ = {
 			isa = PBXGroup;
 			children = (
-				457928591B2979C7006CEF14 /* Book.h */,
-				4579285A1B2979C7006CEF14 /* Book.m */,
 				457928371B297851006CEF14 /* AppDelegate.h */,
 				457928381B297851006CEF14 /* AppDelegate.m */,
-				4579283A1B297851006CEF14 /* ViewController.h */,
-				4579283B1B297851006CEF14 /* ViewController.m */,
-				4579283D1B297851006CEF14 /* Main.storyboard */,
+				457928591B2979C7006CEF14 /* Book.h */,
+				4579285A1B2979C7006CEF14 /* Book.m */,
+				456E712C1B2E68CC002E3C07 /* BookStore.h */,
+				456E712D1B2E68CC002E3C07 /* BookStore.m */,
 				457928401B297851006CEF14 /* Images.xcassets */,
 				457928421B297852006CEF14 /* LaunchScreen.xib */,
+				4579283D1B297851006CEF14 /* Main.storyboard */,
+				4579283A1B297851006CEF14 /* ViewController.h */,
+				4579283B1B297851006CEF14 /* ViewController.m */,
 				457928331B297851006CEF14 /* Supporting Files */,
 			);
 			path = DoubanBookDemo;
@@ -285,6 +290,7 @@
 			files = (
 				4579285B1B2979C7006CEF14 /* Book.m in Sources */,
 				4579283C1B297851006CEF14 /* ViewController.m in Sources */,
+				456E712E1B2E68CC002E3C07 /* BookStore.m in Sources */,
 				457928391B297851006CEF14 /* AppDelegate.m in Sources */,
 				457928361B297851006CEF14 /* main.m in Sources */,
 			);

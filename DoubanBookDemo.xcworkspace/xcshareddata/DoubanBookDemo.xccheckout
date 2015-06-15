@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8F700889-2515-4BB7-963F-9C43F12CDC9F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DoubanBookDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>96454F2DF8D663E5A672FC342474956AB0A2DE8C</key>
+		<string>https://github.com/flyhigherC/DoubanBookDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DoubanBookDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>96454F2DF8D663E5A672FC342474956AB0A2DE8C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/flyhigherC/DoubanBookDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>96454F2DF8D663E5A672FC342474956AB0A2DE8C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>96454F2DF8D663E5A672FC342474956AB0A2DE8C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DoubanBookDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
