@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ImageGroup.h"
 
 @interface Book : NSObject
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *publisher;
+@property (nonatomic, strong) ImageGroup *images;
 
 @end

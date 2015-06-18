@@ -23,7 +23,10 @@
                            [[UIScreen mainScreen] bounds]];
     
     ViewController *controller = [[ViewController alloc] init];
-    self.window.rootViewController = controller;
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: controller];
+    
+    self.window.rootViewController = navController;
     
 //    CGRect screenRect = self.window.bounds;
 //    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame: screenRect];

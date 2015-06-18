@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456D03831B31413C0048A5E0 /* ImageGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 456D03821B31413C0048A5E0 /* ImageGroup.m */; };
 		456E712E1B2E68CC002E3C07 /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 456E712D1B2E68CC002E3C07 /* BookStore.m */; };
+		456EFAB11B32A34700AF7061 /* SearchBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456EFAAF1B32A34700AF7061 /* SearchBookViewController.m */; };
+		456EFAB21B32A34700AF7061 /* SearchBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456EFAB01B32A34700AF7061 /* SearchBookViewController.xib */; };
 		457928361B297851006CEF14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457928351B297851006CEF14 /* main.m */; };
 		457928391B297851006CEF14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457928381B297851006CEF14 /* AppDelegate.m */; };
 		4579283C1B297851006CEF14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579283B1B297851006CEF14 /* ViewController.m */; };
@@ -31,8 +34,13 @@
 
 /* Begin PBXFileReference section */
 		319692EFC92FDF80C033E9A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		456D03811B31413C0048A5E0 /* ImageGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGroup.h; sourceTree = "<group>"; };
+		456D03821B31413C0048A5E0 /* ImageGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGroup.m; sourceTree = "<group>"; };
 		456E712C1B2E68CC002E3C07 /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
 		456E712D1B2E68CC002E3C07 /* BookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
+		456EFAAE1B32A34700AF7061 /* SearchBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBookViewController.h; sourceTree = "<group>"; };
+		456EFAAF1B32A34700AF7061 /* SearchBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBookViewController.m; sourceTree = "<group>"; };
+		456EFAB01B32A34700AF7061 /* SearchBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBookViewController.xib; sourceTree = "<group>"; };
 		457928301B297851006CEF14 /* DoubanBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubanBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457928341B297851006CEF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457928351B297851006CEF14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,8 +123,13 @@
 				457928381B297851006CEF14 /* AppDelegate.m */,
 				457928591B2979C7006CEF14 /* Book.h */,
 				4579285A1B2979C7006CEF14 /* Book.m */,
+				456D03811B31413C0048A5E0 /* ImageGroup.h */,
+				456D03821B31413C0048A5E0 /* ImageGroup.m */,
 				456E712C1B2E68CC002E3C07 /* BookStore.h */,
 				456E712D1B2E68CC002E3C07 /* BookStore.m */,
+				456EFAAE1B32A34700AF7061 /* SearchBookViewController.h */,
+				456EFAAF1B32A34700AF7061 /* SearchBookViewController.m */,
+				456EFAB01B32A34700AF7061 /* SearchBookViewController.xib */,
 				457928401B297851006CEF14 /* Images.xcassets */,
 				457928421B297852006CEF14 /* LaunchScreen.xib */,
 				4579283D1B297851006CEF14 /* Main.storyboard */,
@@ -236,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4579283F1B297851006CEF14 /* Main.storyboard in Resources */,
+				456EFAB21B32A34700AF7061 /* SearchBookViewController.xib in Resources */,
 				457928441B297852006CEF14 /* LaunchScreen.xib in Resources */,
 				457928411B297852006CEF14 /* Images.xcassets in Resources */,
 			);
@@ -291,6 +305,8 @@
 				4579285B1B2979C7006CEF14 /* Book.m in Sources */,
 				4579283C1B297851006CEF14 /* ViewController.m in Sources */,
 				456E712E1B2E68CC002E3C07 /* BookStore.m in Sources */,
+				456EFAB11B32A34700AF7061 /* SearchBookViewController.m in Sources */,
+				456D03831B31413C0048A5E0 /* ImageGroup.m in Sources */,
 				457928391B297851006CEF14 /* AppDelegate.m in Sources */,
 				457928361B297851006CEF14 /* main.m in Sources */,
 			);

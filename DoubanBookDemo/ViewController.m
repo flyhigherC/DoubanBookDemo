@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <RestKit/RestKit.h>
 #import "Book.h"
+#import "ImageGroup.h"
 
 @interface ViewController ()
 
@@ -54,6 +55,13 @@
     RKObjectMapping *bookMapping = [RKObjectMapping mappingForClass: [Book class]];
     [bookMapping addAttributeMappingsFromArray: @[@"title", @"publisher"]];
     
+    RKObjectMapping *imageMapping = [RKObjectMapping mappingForClass: [ImageGroup class]];
+    [imageMapping addAttributeMappingsFromArray:@[@"large", @"medium", @"small"]];
+    
+    [bookMapping addPropertyMapping: [RKRelationshipMapping relationshipMappingFromKeyPath: @"images"
+                                                                                                                                             toKeyPath: @"images"
+                                                                                                                                          withMapping: imageMapping]];
+    
     RKResponseDescriptor *responseDescriptor =
     [RKResponseDescriptor responseDescriptorWithMapping: bookMapping
                                                  method:RKRequestMethodGET
@@ -66,7 +74,7 @@
 
 - (void) loadBookInformation
 {
-    NSDictionary *queryParams = @{@"q" : @"Java"};
+    NSDictionary *queryParams = @{@"q" : @"java"};
     
     [[RKObjectManager sharedManager] getObjectsAtPath:@"/v2/book/search"
                                            parameters:queryParams
@@ -76,7 +84,8 @@
 //                                                      [self.tableView reloadData];
 //                                                  });
                                                   [self.tableView reloadData];
-                                                  NSLog(@"Get the book list!! %@", [[_books objectAtIndex:0] title]);
+                                                  NSLog(@"Get the book list!!%@", [[_books objectAtIndex:0] title]);
+                                                 // NSLog(@"%lu", (unsigned long)[[[[_books objectAtIndex:0] images] objectAtIndex:0] rangeOfString:@" small ="].location);
                                               }
                                               failure:^(RKObjectRequestOperation *operation, NSError *error) {
                                                   NSLog(@" there is no this book: %@", error);
@@ -86,10 +95,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    //cell ini
+    cell = [cell initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier: nil];
     Book *book = _books[indexPath.row];
     cell.textLabel.text = [book title];
     cell.detailTextLabel.text = [book publisher];
+    //cell.imageView.image = [self getImageFromURL:@"http://img3.douban.com/spic/s1957104.jpg"];
+    cell.imageView.image = [self getImageFromURL: book.images.small];
     //NSLog(@"%@",[book publisher]);
     return cell;
 }
@@ -103,4 +114,21 @@
     return 1;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+
+-(UIImage *) getImageFromURL:(NSString *)fileURL {
+    
+    NSLog(@"执行图片下载函数");
+    
+    UIImage * result;
+    
+    NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:fileURL]];
+    
+    result = [UIImage imageWithData:data];
+    
+    return result;
+    
+}
 @end
