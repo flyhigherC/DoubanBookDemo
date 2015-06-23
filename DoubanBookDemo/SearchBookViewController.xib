@@ -6,9 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBookViewController">
             <connections>
-                <outlet property="searchBookButton" destination="fPC-w8-TlP" id="19a-yV-g6o"/>
+                <outlet property="searchBookButton" destination="fPC-w8-TlP" id="eiq-Q0-GX8"/>
                 <outlet property="searchContentField" destination="f0G-mG-Pa1" id="n5y-Gy-0ak"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Qh7-2Z-K9o"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,7 +20,7 @@
                     <rect key="frame" x="38" y="115" width="54" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="f0G-mG-Pa1">
@@ -35,9 +35,12 @@
                     <state key="normal" title="Search Book">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="searchBookButton:" destination="-1" eventType="touchUpInside" id="8dS-My-HIx"/>
+                    </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.8693350995382455" blue="0.38302634050744166" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="433" y="248"/>
         </view>
     </objects>

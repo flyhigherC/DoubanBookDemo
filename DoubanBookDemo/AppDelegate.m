@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "SearchBookViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,11 +23,16 @@
     self.window = [[UIWindow alloc] initWithFrame:
                            [[UIScreen mainScreen] bounds]];
     
-    ViewController *controller = [[ViewController alloc] init];
+//    ViewController *controller = [[ViewController alloc] init];
+//    
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: controller];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: controller];
+    NSBundle *appBundle = [NSBundle mainBundle];
     
-    self.window.rootViewController = navController;
+    SearchBookViewController *sbvController = [[SearchBookViewController alloc] initWithNibName: @"SearchBookViewController"
+                                                                                                                                                  bundle: appBundle];
+    
+    self.window.rootViewController = sbvController;
     
 //    CGRect screenRect = self.window.bounds;
 //    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame: screenRect];

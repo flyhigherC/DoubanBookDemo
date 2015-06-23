@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchBookViewController.h"
 
 @interface ViewController : UITableViewController
 
+SearchBookViewController<PassTrendValueDelegate>;
 
 @end
 

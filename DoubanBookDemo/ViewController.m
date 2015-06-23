@@ -10,10 +10,12 @@
 #import <RestKit/RestKit.h>
 #import "Book.h"
 #import "ImageGroup.h"
+#import "SearchBookViewController.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) NSArray *books;
+@property (nonatomic, strong) NSString *key;
 
 @end
 
@@ -37,6 +39,16 @@
 {
     //self = [super initWithStyle:UITableViewStylePlain];
     self = [super initWithStyle: UITableViewStylePlain];
+    if (self) {
+        UINavigationItem *navItem = self.navigationItem;
+        
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                                                                                style:nil
+                                                                                               target:self
+                                                               action: @selector(goBackHome)];
+        
+        navItem.leftBarButtonItem = bbi;
+    }
     return self;
 }
 
@@ -74,7 +86,7 @@
 
 - (void) loadBookInformation
 {
-    NSDictionary *queryParams = @{@"q" : @"java"};
+    NSDictionary *queryParams = @{@"q" : _key};
     
     [[RKObjectManager sharedManager] getObjectsAtPath:@"/v2/book/search"
                                            parameters:queryParams
@@ -130,5 +142,15 @@
     
     return result;
     
+}
+
+- (void) passTrendValues: (NSString *) keyWorld {
+    NSLog(@"successfully");
+    _key = keyWorld;
+}
+
+- (void) goBackHome {
+    NSLog(@"Go back home!");
+    [self dismissModalViewControllerAnimated:YES];
 }
 @end

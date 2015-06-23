@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchBookViewController : UIViewController
+@protocol PassTrendValueDelegate
+
+- (void) passTrendValues : (NSString *) keyWorld;
 
 @end
+
+@interface SearchBookViewController : UIViewController
+
+@property (strong, nonatomic) id <PassTrendValueDelegate> trendDeletgate;
+
+@end
+
